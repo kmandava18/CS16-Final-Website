@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="/bootstrap.min.css">
+		<link rel="stylesheet" href="/styleSheet.css">
+		<link rel="stylesheet" href="/bootstrap-material-design.min.css">
+		<link rel="stylesheet" href="/snackbar.min.css">
+		<link rel="stylesheet" href="/ripples.min.css">
+		<link rel="icon" type="image/x-icon" href="/km.png">
+		<link rel="stylesheet" href="/nouislider.min.css">
+		<link rel="stylesheet" href="/nouislider.pips.css">
+		<link rel="stylesheet" href="/nouislider.tooltips.css">
+		<link rel="stylesheet" type="text/css" href="/stellar.css">
+    <link rel="stylesheet" type="text/css" href="/pg1.css">
+		
+
+
+		<script src="/jquery.min.js"></script>
+		<script src="/bootstrap.min.js"></script>
+		<script src="/bootbox.min.js"></script>
+		<script src="/material.min.js"></script>
+		<script src="/snackbar.min.js"></script>
+		<script src="/ripples.min.js"></script>
+		<script src="/nouislider.min.js"></script>
+		<script src="jquery123.min.js"></script>
+		<script src="jquery.stellar.min.js"></script>
+    
+
+		<script>
+			$.stellar();
+
+      function sticky_relocate() {
+    var window_top = $(window).scrollTop();
+    var div_top = $('#sticky-anchor').offset().top;
+    if (window_top > div_top){
+        $('#header').addClass('sticky');
+      }
+    else
+        $('#header').removeClass('sticky');
+}
+
+$(function() {
+    $(window).scroll(sticky_relocate);
+    sticky_relocate();
+});
+		</script>
+
+
+
+		<title>CSA16 FINAL</title>
+	</head>
+	<body>
+  <div id="sticky-anchor"></div>
+	<div class="navbar navbar-inverse" id="header">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="main.html">KLM CSA16</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+      <ul class="nav navbar-nav">
+        <li ><a href="main.html">Home</a></li>
+        <li ><a href="about.html">Bio</a></li>
+        <li class="dropdown">
+          <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">More
+            <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="nyan.html">Nyan</a></li>
+            <li class="active"><a href="doge.html">Doge</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Sites</li>
+            <li><a href="http://www.w3schools.com/default.asp">References</a></li>
+            <li><a href="http://www.randomkittengenerator.com/">Cute Cats I Guess</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control col-md-8" placeholder="Search">
+        </div>
+      </form>
+      <div class="nav navbar-nav navbar-right">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

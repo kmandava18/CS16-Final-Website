@@ -37,7 +37,7 @@ h6 {
 
 
 .main{
-    background: url(/front.jpg);
+    background: url(pic/front.jpg);
     -webkit-animation: myfirst 5s ;
     animation: myfirst 5s;
 }

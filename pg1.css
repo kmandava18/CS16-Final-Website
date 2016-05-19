@@ -52,7 +52,7 @@ h6 {
     padding: 50px 0;
     color: #fff;
     background-color: #000;
-	background: url(/yahtzee.png);
+	background: url(./pic/yahtzee.png);
 }
 .final{
 	width: 100%;
@@ -60,7 +60,7 @@ h6 {
     padding: 50px 0;
     color: #fff;
     background-color: #000;
-    background: url(/final.png);
+    background: url(./pic/final.png);
 }
 
 .stellar{

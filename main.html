@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="icon" type="image/x-icon" href="./pic/km.png">
+
+	<link rel="icon" type="image/x-icon" href="./pic/km.png">
     <link rel="stylesheet" type="text/css" href="/pg1.css">
 
     <!-- fonts -->
@@ -29,7 +30,7 @@
 
       function sticky_relocate() {
     var window_top = $(window).scrollTop();
-    var div_top = $('#sticky-anchor').offset().top;
+    var div_top = $('#nav-collapse').offset().top;
     if (window_top > div_top){
         $('#header').addClass('top-nav-collapse');
       }
@@ -50,7 +51,7 @@ $(function() {
 
 
 	<body>
-  <div id="sticky-anchor"></div>
+  <div id="nav-collapse"></div>
 	<div class="navbar navbar-custom navbar-fixed-top" id="header">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -108,9 +109,11 @@ $(function() {
 
 
     <section id="yahtzee" class="content-section text-center">
+    <div class="">
     <h2>About</h2>
     <p>AP CSA is a class dedicated to learning the basics of programming, specifically in Java. This course involves 12 units, where one is taught how Java's language functions and concludes in an AP exam where this knowledge is put to the test.<br> There are a couple program one is required to write. An example of this is a project replicating Yahtzee in java.</p>
-        <div class="yahtzee stellar">
+    </div>
+        <div class="yahtzee stellar ">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                 </div>
@@ -122,17 +125,23 @@ $(function() {
     <section id="final" class="content-section text-center">
     <h2>Final Project</h2>
     <p>This website is the final project for our class. In the last two weeks after the final, we learned how to code in CSS, JS(JavaScript), and HTML. We basically are learning how to quickly learn programming languages and impliment them. We have, essentially, learned as we've gone and learned from others on the internet.</p>
-        <div class="final stellar">
+        <div class="final stellar ">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
+                <a href="http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/4483.html" class="btn btn-default btn-lg">View Full Course Home Page</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="pre-footer" class="content-section text-center">
+        <h2>Code Repository</h2>
+            <a href="https://github.com/kmandava18/CS16-Final-Website" class="btn btn-default btn lg">GitHub Repository of This Website</a>
+    </section>
 
-<!--Test Stellar-->
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+    <footer>
+        <p> Designed using BootStrap and Parallax<br>KLM</p>
+    </footer>
 	</body>
 </html>

@@ -16,17 +16,10 @@ body{
      width: 100%;
   }
 
-p {
+  p {
     padding: 0 0.5em;
     margin: 0;
     line-height: 1.5;
-    font-size: 130%;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-
-}
-.content-section p{
-    padding-right: 50px;
-    padding-left: 50px;
 }
 
 h1,
@@ -42,50 +35,34 @@ h6 {
     letter-spacing: 1px;}
 
 
-.main{
-    background: url(pic/front.jpg);
-    -webkit-animation: myfirst 5s ;
-    animation: myfirst 5s;
-}
- @-webkit-keyframes myfirst {
+    @-webkit-keyframes myfirst {
     from {opacity: 0.2;}
     to {opacity: 1;}
-  }
+  }                                                     
 
 
-.yahtzee{
-	width: 100%;
-    height: 250px;
-    padding: 50px 0;
-    color: #fff;
-    background-color: #000;
-	background: url(./pic/yahtzee.png);
+@media(min-width:767px) {
+	.final{
+		height: 70px;
+	}
+
+    .yahtzee {
+        padding: 100px 0;
+    }
+
+    #map {
+        height: 400px;
+        margin-top: 250px;
+    }
 }
-.final{
-	width: 100%;
-	height: 300px;
-    padding: 125px 0;
-    color: #fff;
-    background-color: #000;
-    background: url(./pic/final.png);
-}
+/*-------------------------------------------------------------------------------------------------Template settings----------------------------------------------------------------------------------*/
+ 
 
-.stellar{
-	background-position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-
-
-
-a{
+a {
     color: #42dca3;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-
 }
 
 a:hover,
@@ -169,6 +146,7 @@ a:focus {
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
+
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
@@ -222,8 +200,17 @@ a:focus {
 
 
 .content-section {
-    padding: 10px 0;
+    padding-top: 25px;
 }
+
+
+#map {
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+}
+
+
 
 .logo:hover{
     -webkit-animation-name: pulse;
@@ -296,6 +283,28 @@ a:focus {
     outline: 0;
     color: #000;
     background-color: #42dca3;
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
 }
 
 footer {
